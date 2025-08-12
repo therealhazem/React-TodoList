@@ -1,3 +1,21 @@
 body {
     margin: 0;
 }
+
+.mytodo {
+    transition: all 0.3s !important;
+}
+
+.mytodo:hover {
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.4);
+    padding: 10px 0px;
+}
+
+.theicon {
+    transition: all 0.3s !important;
+}
+
+.theicon:hover {
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.4);
+    filter: brightness(110%);
+}

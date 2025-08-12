@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import { Container, Divider } from '@mui/material';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
+import Todo from './Todo';
 
 export default function TodoList() {
     return (
@@ -19,6 +20,7 @@ export default function TodoList() {
                             My TODOs
                         </Typography>
                         <Divider sx={{ width: '100%' }} />
+                        {/* toggle button start */}
                         <ToggleButtonGroup
                             exclusive
                             // onChange={handleAlignment}
@@ -28,12 +30,11 @@ export default function TodoList() {
                             <ToggleButton value="center">Done</ToggleButton>
                             <ToggleButton value="right">Not Done</ToggleButton>
                         </ToggleButtonGroup>
+                        {/* toggle button start */}
                     </Box>
+                    <Todo />
                 </CardContent>
-                <CardActions sx={{ justifyContent: 'left' }}>
-                    <Button size="small">Learn More</Button>
-                </CardActions>
             </Card>
-        </Container>
+        </Container >
     );
 }
